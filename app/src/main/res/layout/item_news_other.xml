@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/default_app_widget_margin_left"
+    android:paddingRight="@dimen/default_app_widget_margin_right"
+    android:paddingTop="@dimen/default_app_widget_margin_top">
+
+    <TextView
+        android:id="@+id/news_other_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/news_title_font_size"
+        android:textColor="@color/news_title_color"
+        android:text="菲菲发文发文福娃鹅防文案发文发文啊发文发文福娃鹅防"
+        android:lineSpacingExtra="@dimen/line_spacing"
+        />
+    <LinearLayout
+        android:id="@+id/news_other_imgs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/news_preview_img_height"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/default_app_widget_margin_left"
+        android:layout_below="@id/news_other_title"
+        >
+        <ImageView
+            android:id="@+id/news_other_img_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
+            />
+        <ImageView
+            android:id="@+id/news_other_img_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="@dimen/default_app_widget_margin_top"
+            android:layout_marginRight="@dimen/default_app_widget_margin_top"
+            />
+        <ImageView
+            android:id="@+id/news_other_img_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/news_other_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_other_imgs"
+        android:layout_marginTop="@dimen/default_app_widget_margin_left"
+        android:text="来源"
+        android:textSize="@dimen/default_font_size" />
+
+    <TextView
+        android:id="@+id/news_other_votecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/news_other_imgs"
+        android:layout_marginTop="@dimen/default_app_widget_margin_left"
+        android:text="100跟帖"
+        android:textSize="@dimen/default_font_size" />
+
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray"
+        android:layout_marginTop="@dimen/default_app_widget_margin_left"
+        android:layout_below="@id/news_other_source"
+        />
+</RelativeLayout>

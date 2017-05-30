@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="default_app_widget_margin_left">16dp</dimen>
+    <dimen name="default_app_widget_margin_top">8dp</dimen>
+    <dimen name="default_app_widget_margin_right">16dp</dimen>
+    <dimen name="default_app_widget_margin_bottom">8dp</dimen>
+    <dimen name="news_preview_img_width">150dp</dimen>
+    <dimen name="news_preview_img_height">90dp</dimen>
+    <dimen name="line_spacing">3dp</dimen>
+    <dimen name="pading_5dp">5dp</dimen>
+    <dimen name="tab_top_pading">2dp</dimen>
+    <dimen name="tab_buttom_height">55dp</dimen>
+    <dimen name="tab_img_size">25dp</dimen>
+    <dimen name="live_tip_bg_height">18dp</dimen>
+    <dimen name="list_video_item_height">200dp</dimen>
+
+    <dimen name="font_size_12sp">12sp</dimen>
+    <dimen name="default_font_size">14sp</dimen>
+    <dimen name="toolbar_title_font_size">20sp</dimen>
+    <dimen name="news_title_font_size">20sp</dimen>
+    <dimen name="news_detail_font_size">16sp</dimen>
+    <dimen name="font_size_18sp">18sp</dimen>
+
+
+    <dimen name="tool_bar_back_size">25px</dimen>
+
+</resources>

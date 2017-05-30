@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_video_item_height"
+        android:layout_marginBottom="@dimen/default_app_widget_margin_bottom"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/live_list_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_video_item_height"
+            android:src="@drawable/default_img" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_video_item_height"
+            android:background="@color/translucent_1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_img_size"
+            android:layout_marginLeft="@dimen/default_app_widget_margin_left"
+            android:layout_marginTop="@dimen/default_app_widget_margin_right"
+            >
+            <TextView
+                android:id="@+id/live_list_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="噶围观我"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_font_size"
+                android:gravity="center_vertical"
+                android:background="@drawable/shape_circle_rg"
+                android:paddingLeft="@dimen/tab_img_size"
+                android:paddingRight="@dimen/default_app_widget_margin_top"
+                android:paddingTop="@dimen/line_spacing"
+                android:paddingBottom="@dimen/line_spacing"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/line_spacing"
+                />
+            <com.lianqiang.badnews.widget.CircleImageView
+                android:id="@+id/live_list_icon"
+                android:layout_width="@dimen/tab_img_size"
+                android:layout_height="@dimen/tab_img_size"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_launcher" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/live_list_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/default_app_widget_margin_right"
+            android:layout_marginLeft="@dimen/default_app_widget_margin_left"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/live_list_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="直播"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_rectangle_red"
+                android:paddingLeft="@dimen/pading_5dp"
+                android:paddingRight="@dimen/tab_img_size"
+                android:paddingTop="@dimen/pading_5dp"
+                android:paddingBottom="@dimen/pading_5dp"
+                android:textSize="@dimen/default_font_size" />
+            <ImageView
+                android:layout_width="@dimen/live_tip_bg_height"
+                android:layout_height="@dimen/live_tip_bg_height"
+                android:src="@drawable/ic_live"
+                android:layout_alignRight="@id/live_list_status"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/line_spacing"
+                />
+
+            <TextView
+                android:id="@+id/live_list_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/line_spacing"
+                android:text="100参与"
+                android:textSize="@dimen/font_size_12sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_rectangle"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/pading_5dp"
+                android:layout_toRightOf="@id/live_list_status"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/live_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/live_list_ll"
+            android:layout_marginBottom="@dimen/default_app_widget_margin_bottom"
+            android:layout_marginLeft="@dimen/default_app_widget_margin_left"
+            android:layout_marginRight="@dimen/default_app_widget_margin_right"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="发文福娃鹅防娃儿发文发文发违法娃儿fawef发文发文我二"
+            android:textSize="@dimen/font_size_18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="appColor">#F2A807</color>
+    <color name="line_gray">#CFCFCE</color>
+    <color name="tab_bg">#f4f4f4</color>
+    <color name="text_select_color">#EA430C</color>
+    <color name="news_title_color">#272727</color>
+    <color name="news_content_color">#353535</color>
+    <color name="news_source_color">#2E2E2E</color>
+    <color name="news_source_gray_color">#838282</color>
+    <color name="tab_text_color">#424242</color>
+    <color name="list_bg">#edecec</color>
+    <color name="white">#ffffff</color>
+    <color name="translucent">#b42b2b2b</color>
+    <color name="translucent_1">#322b2b2b</color>
+
+</resources>

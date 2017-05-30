@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/list_bg"
+    android:paddingBottom="@dimen/default_app_widget_margin_bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        >
+
+        <FrameLayout
+            android:id="@+id/list_item_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_video_item_height" />
+
+        <ImageView
+            android:id="@+id/list_item_btn"
+            android:layout_width="@dimen/tab_buttom_height"
+            android:layout_height="@dimen/tab_buttom_height"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_video_idle" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:paddingTop="@dimen/default_app_widget_margin_top"
+        android:paddingLeft="@dimen/default_app_widget_margin_left"
+        android:paddingRight="@dimen/default_app_widget_margin_right"
+        android:paddingBottom="@dimen/default_app_widget_margin_bottom"
+        >
+
+        <TextView
+            android:id="@+id/video_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/line_spacing"
+            android:text="发文福娃鹅防挖而访问爱范围发文福娃鹅防慰安妇瓦房娃儿额外"
+            android:textColor="@color/tab_text_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/news_detail_font_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_app_widget_margin_top"
+            >
+            <ImageView
+                android:id="@+id/video_source_icon"
+                android:layout_width="@dimen/tab_img_size"
+                android:layout_height="@dimen/tab_img_size"
+                android:src="@drawable/ic_tab_home"/>
+            <TextView
+                android:id="@+id/video_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fssfsf"
+                android:layout_toRightOf="@id/video_source_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/line_spacing"
+                android:textSize="@dimen/default_font_size"
+                android:textColor="@color/tab_text_color"
+                />
+
+            <TextView
+                android:id="@+id/video_replyCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="ddd"
+                android:textColor="@color/tab_text_color"
+                android:textSize="@dimen/default_font_size"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

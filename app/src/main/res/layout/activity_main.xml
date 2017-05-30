@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lianqiang.badnews.module.MainActivity">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_buttom_height"
+        app:tabIndicatorHeight="0dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:background="@color/tab_bg"
+        android:layout_alignParentBottom="true"
+        />
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_buttom"
+        />
+
+    <FrameLayout
+        android:id="@+id/video_full_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

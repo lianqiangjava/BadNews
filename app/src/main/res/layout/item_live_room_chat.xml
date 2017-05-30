@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/default_app_widget_margin_top"
+        android:paddingLeft="@dimen/default_app_widget_margin_left"
+        android:paddingRight="@dimen/default_app_widget_margin_right">
+
+
+        <TextView
+            android:id="@+id/msg_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/live_tip_bg_height"
+            android:layout_marginTop="@dimen/live_tip_bg_height"
+            android:text="33"
+            android:textColor="@color/text_select_color"
+            android:textSize="@dimen/default_font_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.lianqiang.badnews.widget.CircleImageView
+                android:id="@+id/user_face"
+                android:layout_width="@dimen/live_tip_bg_height"
+                android:layout_height="@dimen/live_tip_bg_height"
+                android:src="@drawable/ic_tab_choice" />
+
+            <TextView
+                android:id="@+id/user_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_app_widget_margin_top"
+                android:text="33"
+                android:textColor="@color/tab_text_color"
+                android:textSize="@dimen/default_font_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/msg_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_app_widget_margin_top"
+            android:lineSpacingExtra="@dimen/line_spacing"
+            android:text="发文发文访问"
+            android:textColor="@color/news_source_color"
+            android:textSize="@dimen/news_detail_font_size" />
+
+        <ImageView
+            android:id="@+id/msg_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/news_preview_img_width"
+            android:layout_marginTop="@dimen/default_app_widget_margin_top"
+            android:src="@drawable/default_img"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/quote_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_app_widget_margin_top"
+            android:background="@color/line_gray"
+            android:paddingBottom="@dimen/default_app_widget_margin_top"
+            android:paddingLeft="@dimen/pading_5dp"
+            android:paddingRight="@dimen/pading_5dp"
+            android:paddingTop="@dimen/default_app_widget_margin_top"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/quote_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="33"
+                android:textColor="@color/news_source_gray_color"
+                android:textSize="@dimen/default_font_size" />
+
+            <TextView
+                android:id="@+id/quote_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="4"
+                android:textColor="@color/news_source_gray_color"
+                android:textSize="@dimen/default_font_size" />
+
+            <TextView
+                android:id="@+id/quote_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quote_user"
+                android:layout_marginTop="@dimen/default_app_widget_margin_top"
+                android:text="wet"
+                android:textColor="@color/news_source_gray_color"
+                android:textSize="@dimen/default_font_size" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
