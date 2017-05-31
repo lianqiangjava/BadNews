@@ -36,9 +36,16 @@ public class LiveVideoService {
      * @param callback
      */
     public static void getChatAll(String roomId,int page,RequestCallback callback){
-        service.getChatAll(roomId,page)
-                .compose(new BaseSchedulerTransformer<LiveChat>())
-                .subscribe(new ResultObserver<>(callback));
+        if(page ==0 ){
+            service.getChatAll(roomId)
+                    .compose(new BaseSchedulerTransformer<LiveChat>())
+                    .subscribe(new ResultObserver<>(callback));
+        }else {
+            service.getChatAll(roomId,page)
+                    .compose(new BaseSchedulerTransformer<LiveChat>())
+                    .subscribe(new ResultObserver<>(callback));
+        }
+
     }
 
     /**

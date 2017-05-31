@@ -99,7 +99,7 @@ public class LiveFragment extends BaseFragment<LivePresenter> implements ILiveVi
                         if(liveReviewBean.getLiveType() == 0){
                             startActivity(bundle, LiveRoomActivity.class);
                         }else {
-
+                            startActivity(bundle, LiveLBActivity.class);
                         }
 
                     }

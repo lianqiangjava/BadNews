@@ -10,6 +10,7 @@ public class Api {
     public static final String NETEAST_HOST = "https://c.m.163.com/";
     public static final String LIVE_VIDEO_HOST = "https://data.live.126.net/";//直播
     public static final String LIVE_CHAT_HOST = "https://data.chat.126.net/";//直播聊天内容
+    public static final String LIVE_CHAT_LB_HOST = "https://luoboapi.v.163.com/";//视频来自PGC直播
     public static final String END_URL = "-20.html";
     public static final String ENDDETAIL_URL = "/full.html";
 

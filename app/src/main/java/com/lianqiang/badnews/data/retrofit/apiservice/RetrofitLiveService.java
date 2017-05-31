@@ -36,6 +36,9 @@ public interface RetrofitLiveService {
     @GET("liveAll/{roomId}/{page}.json")
     Observable<LiveChat> getChatAll(@Path("roomId") String roomId,@Path("page") int page);
 
+    @GET("liveAll/{roomId}.json")
+    Observable<LiveChat> getChatAll(@Path("roomId") String roomId);
+
     /**
      * http://data.live.126.net/live/134266.json
      * 获取当前直播房间实时聊天记录(liveType为0时调用)

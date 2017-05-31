@@ -36,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
     LiveFragment liveFragment;
     VideoFragment videoFragment;
 
+    private final String[] tags = new String[]{
+            "newsFragment","liveFragment","videoFragment","myFragment"
+    };
+
     private static final int[] TAB_TITLES = new int[]{
             R.string.tab_home, R.string.tab_live,
             R.string.tab_vedio, R.string.tab_my
@@ -54,6 +58,13 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         initView();
+
+        if(savedInstanceState != null){
+            newsFragment = (NewsFragment) manager.findFragmentByTag(tags[0]);
+            liveFragment = (LiveFragment) manager.findFragmentByTag(tags[1]);
+            videoFragment = (VideoFragment) manager.findFragmentByTag(tags[2]);
+        }
+
         changeTab(0);
     }
 
@@ -103,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             case 0:
                 if (newsFragment == null) {
                     newsFragment = new NewsFragment();
-                    ft.add(R.id.main_container, newsFragment);
+                    ft.add(R.id.main_container, newsFragment,tags[position]);
                 } else {
                     ft.show(newsFragment);
                 }
@@ -111,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
             case 1:
                 if (liveFragment == null) {
                     liveFragment = new LiveFragment();
-                    ft.add(R.id.main_container, liveFragment);
+                    ft.add(R.id.main_container, liveFragment,tags[position]);
                 } else {
                     ft.show(liveFragment);
                 }
@@ -119,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
             case 2:
                 if (videoFragment == null) {
                     videoFragment = new VideoFragment();
-                    ft.add(R.id.main_container, videoFragment);
+                    ft.add(R.id.main_container, videoFragment,tags[position]);
                 } else {
                     ft.show(videoFragment);
                 }

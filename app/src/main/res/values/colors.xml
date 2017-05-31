@@ -16,5 +16,6 @@
     <color name="white">#ffffff</color>
     <color name="translucent">#b42b2b2b</color>
     <color name="translucent_1">#322b2b2b</color>
+    <color name="chat_name_color">#9b9a9a</color>
 
 </resources>

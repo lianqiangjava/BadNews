@@ -30,7 +30,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * 直播室
+ * 直播室-livetype=0时
  */
 public class LiveRoomActivity extends BaseActivity<LiveRoomPresenter> implements ILiveRoomView {
 
@@ -71,6 +71,7 @@ public class LiveRoomActivity extends BaseActivity<LiveRoomPresenter> implements
 
 
     private void initView(){
+        livePalyer.getBackButton().setVisibility(View.VISIBLE);
         livePalyer.getBackButton().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,7 +79,6 @@ public class LiveRoomActivity extends BaseActivity<LiveRoomPresenter> implements
             }
         });
 
-        livePalyer.getBackButton().setVisibility(View.VISIBLE);
         orientationUtils = new OrientationUtils(this,livePalyer);
         orientationUtils.setEnable(false);
         //关闭自动旋转
@@ -128,7 +128,7 @@ public class LiveRoomActivity extends BaseActivity<LiveRoomPresenter> implements
             livePalyer.setUp(path,true,"");
 
             livePalyer.startPlayLogic();
-
+            livePalyer.getBackButton().setVisibility(View.VISIBLE);
         }
     }
 

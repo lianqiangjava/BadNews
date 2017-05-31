@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
+        android:id="@+id/live_palyer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_video_item_height"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_buttom_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/default_app_widget_margin_left"
+        android:text="聊天室"
+        android:textSize="@dimen/news_detail_font_size"
+        android:textColor="@color/news_source_color"
+        />
+
+    <include layout="@layout/fragment_news"/>
+</LinearLayout>

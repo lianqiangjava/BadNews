@@ -33,7 +33,7 @@ public class BaseViewHolder extends RecyclerView.ViewHolder {
     }
 
     public static BaseViewHolder get(Context context, ViewGroup parent,int layoutId){
-        View itemView = LayoutInflater.from(context).inflate(layoutId,null);
+        View itemView = LayoutInflater.from(context).inflate(layoutId,parent,false);
         BaseViewHolder viewHolder = new BaseViewHolder(context,itemView);
         return viewHolder;
     }

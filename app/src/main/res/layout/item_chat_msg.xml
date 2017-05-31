@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/pading_5dp"
+    android:paddingTop="@dimen/pading_5dp">
+
+    <com.lianqiang.badnews.widget.CircleImageView
+        android:id="@+id/chat_head"
+        android:layout_width="@dimen/tab_img_size"
+        android:layout_height="@dimen/tab_img_size"
+        android:layout_marginLeft="@dimen/default_app_widget_margin_top"
+        android:src="@drawable/default_img" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_app_widget_margin_top"
+        android:layout_marginRight="@dimen/default_app_widget_margin_right"
+        android:background="@drawable/shape_circle_rg_white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/default_app_widget_margin_bottom"
+        android:paddingLeft="@dimen/default_app_widget_margin_left"
+        android:paddingRight="@dimen/default_app_widget_margin_right"
+        android:paddingTop="@dimen/default_app_widget_margin_top">
+
+        <TextView
+            android:id="@+id/chat_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="feff"
+            android:textColor="@color/chat_name_color" />
+
+        <TextView
+            android:id="@+id/chat_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/line_spacing"
+            android:lineSpacingExtra="@dimen/line_spacing"
+            android:text="发文发文福娃鹅防文案发文发文"
+            android:textColor="@color/tab_text_color" />
+    </LinearLayout>
+
+</LinearLayout>

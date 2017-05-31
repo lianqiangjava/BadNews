@@ -74,7 +74,7 @@ public class LiveChatFragment extends BaseFragment<LiveRoomPresenter> implements
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_live_chat, container, false);
+        View view = inflater.inflate(R.layout.fragment_live_chat, null);
         unbinder = ButterKnife.bind(this, view);
         initRefreshLayout();
 
@@ -99,7 +99,7 @@ public class LiveChatFragment extends BaseFragment<LiveRoomPresenter> implements
 
     @Override
     public void onError(String msg) {
-       endRefresh();
+        endRefresh();
         Snackbar.make(refreshLayout, msg, 1000).show();
     }
 
@@ -109,7 +109,7 @@ public class LiveChatFragment extends BaseFragment<LiveRoomPresenter> implements
         unbinder.unbind();
     }
 
-    public interface VideoInfoCallBack{
+    public interface VideoInfoCallBack {
         void setVideoInfor();
     }
 
@@ -123,7 +123,7 @@ public class LiveChatFragment extends BaseFragment<LiveRoomPresenter> implements
         return false;
     }
 
-    private void endRefresh(){
+    private void endRefresh() {
         refreshLayout.endRefreshing();
         refreshLayout.endLoadingMore();
     }

@@ -16,7 +16,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".module.MainActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize">
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,8 +27,15 @@
         <activity android:name=".module.news.ui.NewsDetailActivity" />
         <activity
             android:name=".module.live.ui.LiveRoomActivity"
-            android:label="@string/title_activity_live_room"
             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_live_room"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".module.live.ui.LiveLBActivity"
+            android:label="@string/title_activity_live_lb"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme"></activity>
     </application>
 

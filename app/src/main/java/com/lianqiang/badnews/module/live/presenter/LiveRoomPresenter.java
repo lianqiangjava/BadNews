@@ -22,8 +22,8 @@ public class LiveRoomPresenter extends BasePresenterImpl<ILiveRoomView, LiveChat
 
     private String mRoomId;//房间ID
     private String mChatType;//主播/所有用户消息
-    private int mChatPage = 1;
-    private int mTopicPage = 1;
+    private int mChatPage;
+    private int mTopicPage;
 
     public LiveRoomPresenter(ILiveRoomView view, String roomId,String chatTpye) {
         super(view);
@@ -56,7 +56,7 @@ public class LiveRoomPresenter extends BasePresenterImpl<ILiveRoomView, LiveChat
                 @Override
                 public void onSuccess(LiveChat data) {
                     if(data!=null){
-                        mChatPage++;
+                        mChatPage = data.getNextPage();
                     }
                     mView.setLiveInfo(data);
                 }
